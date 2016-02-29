@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear">
+
+    <LinearLayout style="@style/titleBar" android:id="@+id/titleBar">
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarBackButton"
+                android:visibility="visible"
+                android:text="@string/titleBarBackButton" />
+        <TextView
+                style="@style/titleBarText"
+                android:id="@+id/titleBarText"
+                android:text="@string/alarmRuleViewTitle" />
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarEditButton"
+                android:visibility="visible"
+                android:text="@string/titleBarEditButton" />
+    </LinearLayout>
+
+    <ScrollView style="@style/mainContent">
+        <LinearLayout style="@style/mainContentLinear">
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleNameLabel" />
+            <TextView
+                    style="@style/contentTextView"
+                    android:id="@+id/alarmRuleName" />
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleTimeLabel" />
+            <TextView
+                    style="@style/alarmRuleTime"
+                    android:id="@+id/alarmRuleTime" />
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleRepeatRuleLabel" />
+            <com.isjfk.android.rac.widget.DateRuleListViewer
+                    style="@style/contentList"
+                    android:id="@+id/dateRuleListViewer" />
+            <LinearLayout
+                    style="@style/mainContentLinear"
+                    android:id="@+id/alarmRuleDelAfterExpiredGroup">
+                <TextView
+                        style="@style/contentLabel"
+                        android:text="@string/alarmRuleDelAfterExpiredLabel" />
+                <TextView
+                        style="@style/contentTextView"
+                        android:id="@+id/alarmRuleDelAfterExpired" />
+            </LinearLayout>
+            <LinearLayout
+                    style="@style/mainContentLinear"
+                    android:id="@+id/alarmRuleComplyWorkdayGroup">
+                <TextView
+                        style="@style/contentLabel"
+                        android:text="@string/alarmRuleComplyWorkdayLabel" />
+                <TextView
+                        style="@style/contentTextView"
+                        android:id="@+id/alarmRuleComplyWorkday" />
+            </LinearLayout>
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleRingLabel" />
+            <TextView
+                    style="@style/contentTextView"
+                    android:id="@+id/alarmRuleRing" />
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleRingtoneLabel" />
+            <TextView
+                    style="@style/contentTextView"
+                    android:id="@+id/alarmRuleRingtone" />
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/alarmRuleVibrateLabel" />
+            <TextView
+                    style="@style/contentTextView"
+                    android:id="@+id/alarmRuleVibrate" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

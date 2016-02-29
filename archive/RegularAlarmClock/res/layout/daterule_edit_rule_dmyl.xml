@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.isjfk.android.rac.widget.DayMonthYearListSelector xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/listItem"
+        android:id="@+id/dayMonthYearList"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+</com.isjfk.android.rac.widget.DayMonthYearListSelector>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/listItem"
+        android:orientation="vertical">
+
+    <LinearLayout
+            style="@style/listItem"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:text="@string/dateRuleWeekInMonth1" />
+        <Spinner
+                android:id="@+id/orderInMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/order" />
+        <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:text="@string/dateRuleWeekInMonth2" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/listItem"
+            android:id="@+id/dayOfWeek"
+            android:orientation="vertical">
+        <CheckBox style="@style/listItem" android:id="@+id/sundayFirst" android:text="@string/sunday" />
+        <CheckBox style="@style/listItem" android:id="@+id/monday" android:text="@string/monday" />
+        <CheckBox style="@style/listItem" android:id="@+id/tuesday" android:text="@string/tuesday" />
+        <CheckBox style="@style/listItem" android:id="@+id/wednesday" android:text="@string/wednesday" />
+        <CheckBox style="@style/listItem" android:id="@+id/thursday" android:text="@string/thursday" />
+        <CheckBox style="@style/listItem" android:id="@+id/friday" android:text="@string/friday" />
+        <CheckBox style="@style/listItem" android:id="@+id/saturday" android:text="@string/saturday" />
+        <CheckBox style="@style/listItem" android:id="@+id/sundayLast" android:text="@string/sunday" android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:text="@string/dateRuleWeekInMonth3" />
+
+</LinearLayout>

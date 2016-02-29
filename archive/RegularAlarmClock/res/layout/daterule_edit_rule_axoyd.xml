@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/listItem"
+        android:stretchColumns="1">
+    <TableRow android:gravity="center_vertical">
+        <TextView
+                style="@style/mediumText"
+                android:text="@string/dateRuleAlarmXOffYDaysStart"
+                android:layout_width="wrap_content" />
+        <com.isjfk.android.rac.widget.DayMonthYearPicker
+                style="@style/listItem"
+                android:id="@+id/alarmXOffYDaysStart"
+                android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical">
+        <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:text="@string/dateRuleAlarmXOffYDaysAlarm" />
+        <LinearLayout
+                style="@style/listItem"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            <com.isjfk.android.rac.widget.EditTextDefault
+                    style="@style/dateRuleNumber"
+                    android:id="@+id/alarmXOffYDaysAlarm"
+                    android:hint="@string/dateRuleAlarmXOffYDaysDefaultX"
+                    android:imeOptions="actionNext" />
+            <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:text="@string/dateRuleAlarmXOffYDaysDays" />
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:gravity="center_vertical">
+        <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:text="@string/dateRuleAlarmXOffYDaysOff" />
+        <LinearLayout
+                style="@style/listItem"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            <com.isjfk.android.rac.widget.EditTextDefault
+                    style="@style/dateRuleNumber"
+                    android:id="@+id/alarmXOffYDaysOff"
+                    android:hint="@string/dateRuleAlarmXOffYDaysDefaultY"
+                    android:imeOptions="actionDone" />
+            <TextView
+                    style="@style/mediumText"
+                    android:layout_width="wrap_content"
+                    android:text="@string/dateRuleAlarmXOffYDaysDays" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

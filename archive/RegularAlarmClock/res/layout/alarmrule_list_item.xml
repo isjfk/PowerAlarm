@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/mainListItem"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:descendantFocusability="blocksDescendants">
+
+    <com.isjfk.android.rac.widget.TimeView
+            style="@style/timeView"
+            android:id="@+id/alarmRuleTime">
+        <TextView style="@style/timeText" android:id="@+id/timeText" android:text="@string/timeViewDefaultTime"/>
+        <LinearLayout style="@style/timeAMPMLayout" android:id="@+id/timeAMPM">
+            <TextView style="@style/timeAMPM" android:id="@+id/timeAM" android:text="@string/timeViewAM"/>
+            <TextView style="@style/timeAMPMSep" />
+            <TextView style="@style/timeAMPM" android:id="@+id/timePM" android:text="@string/timeViewPM"/>
+        </LinearLayout>
+    </com.isjfk.android.rac.widget.TimeView>
+
+    <LinearLayout
+            android:id="@+id/alarmTextLinearLayout"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <TextView
+                style="@style/ringText"
+                android:id="@+id/alarmRuleName"
+                android:singleLine="true"
+                android:ellipsize="end" />
+        <TextView
+                style="@style/ringText"
+                android:id="@+id/alarmRuleDesc"
+                android:singleLine="true"
+                android:ellipsize="end" />
+    </LinearLayout>
+
+    <ToggleButton
+            android:id="@+id/alarmRuleEnabled"
+            android:text="@string/enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/toggleButtonOn"
+            android:textOff="@string/toggleButtonOff" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/mainListItem">
+
+    <TextView
+            style="@style/mediumText"
+            android:id="@+id/workdayName"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="" />
+
+    <TextView
+            style="@style/smallTextDim"
+            android:id="@+id/dateRuleDesc"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="" />
+
+</LinearLayout>

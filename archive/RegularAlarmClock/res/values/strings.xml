@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Power Alarm</string>
+    <string name="dataProviderName">PAC Data Provider</string>
+    <string name="dataServiceName">PAC Data Service</string>
+    <string name="alarmServiceName">PAC Service</string>
+    <string name="alarmReceiverName">PAC Receiver</string>
+    <string name="aboutName">About</string>
+    <string name="alarmName">Alarm</string>
+    <string name="dismissSnoozedAlarmName">Dismiss Snoozed Alarm</string>
+    <string name="helpName">Power Alarm Help</string>
+
+    <string name="titleBarBackButton">Back</string>
+    <string name="titleBarAddButton">Add</string>
+    <string name="titleBarEditButton">Edit</string>
+    <string name="titleBarSaveButton">Save</string>
+    <string name="scheduleButton">Schedule</string>
+    <string name="alarmRuleButton">Alarm</string>
+    <string name="optionsMenuButton">…</string>
+
+    <string name="buttonOK">OK</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonYes">Yes</string>
+    <string name="buttonNo">No</string>
+    <string name="buttonAdd">Add</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonDismiss">Dismiss</string>
+    <string name="buttonSnooze">Snooze</string>
+    <string name="toggleButtonOn">ON</string>
+    <string name="toggleButtonOff">OFF</string>
+
+    <string name="menuPreferences">Preferences</string>
+    <string name="menuWorkday">Workday</string>
+    <string name="menuHelp">Help</string>
+    <string name="menuAbout">About</string>
+
+    <string name="contextMenuView">View</string>
+    <string name="contextMenuClone">Clone</string>
+    <string name="contextMenuDelete">Delete</string>
+
+    <string name="loading">loading…</string>
+    <string name="enabled">Enabled</string>
+    <string name="openHelpConfirmation">See help now? (You can check it later in menus).</string>
+    <string name="saveConfirmation">Save changes?</string>
+
+    <string name="dayMonth_ddmm">%1$s %2$s</string>
+    <string name="dayMonth_mmdd">%2$s %1$s</string>
+    <string name="dayMonthYear_ddmmyyyy">%1$s %2$s, %3$s</string>
+    <string name="dayMonthYear_mmddyyyy">%2$s %1$s, %3$s</string>
+    <string name="dayMonthYear_yyyymmdd">%3$s, %2$s %1$s</string>
+    <string name="timeAM">%1$s AM</string>
+    <string name="timePM">%1$s PM</string>
+    <string name="dateTime">%1$s, %2$s</string>
+    <string name="dateWeekShort">%1$s, %2$s</string>
+    <string name="dateTimeWeek">%1$s, %2$s, %3$s</string>
+
+    <string name="descTimeNoMinute">%1$s o\'clock</string>
+    <string name="descTime">%1$s o\'clock %2$s minutes</string>
+    <string name="descTimeAM">%1$s, AM</string>
+    <string name="descTimePM">%1$s, PM</string>
+    <string name="speakAlarmNameText">%1$s. Now it\'s %2$s.</string>
+
+    <string name="timeViewDefaultTime">00:00</string>
+    <string name="timeViewAM">AM</string>
+    <string name="timeViewPM">PM</string>
+
+    <string name="scheduleNoRecord">No alarm of recent 2 weeks. Go to Alarm to create new one.</string>
+    <string name="scheduleNextAlarm">Next Alarm:</string>
+    <string name="scheduleNextAlarmIntervalHourMinute">In %1$s hours and %2$s minutes.</string>
+    <string name="scheduleNextAlarmIntervalDayHourMinute">In %1$s days, %2$s hours and %3$s minutes.</string>
+    <string name="scheduleEnabled">Schedule Enabled</string>
+    <string name="scheduleDisabled">Schedule Disabled</string>
+    <string name="errScheduleQueryAllFailed">Error: Query all schedules failed!</string>
+    <string name="errScheduleUpdateEnabledFailed">Error: Update schedule enabled failed!</string>
+    <string name="scheduleDateText">%1$s, %2$s</string>
+
+    <string name="alarmRuleListTitle">Alarm Rule</string>
+    <string name="alarmRuleViewTitle">Alarm Detail</string>
+    <string name="alarmRuleEditTitle">Edit Alarm</string>
+    <string name="alarmRuleNewTitle">New Alarm</string>
+    <string name="alarmRuleNoRecord">No Alarm Defined</string>
+    <string name="alarmRuleEnabled">Alarm Enabled</string>
+    <string name="alarmRuleDisabled">Alarm Disabled</string>
+    <string name="alarmRuleNameLabel">Name:</string>
+    <string name="alarmRuleNameDefault">Alarm</string>
+    <string name="alarmRuleTimeLabel">Time:</string>
+    <string name="alarmRuleRepeatRuleLabel">Repeat Rule:</string>
+    <string name="alarmRuleNoRepeatRule">One Time</string>
+    <string name="alarmRuleDelAfterExpiredLabel">Delete After Expired:</string>
+    <string name="alarmRuleDelAfterExpiredTrue">YES</string>
+    <string name="alarmRuleDelAfterExpiredFalse">NO</string>
+    <string name="alarmRuleComplyWorkdayLabel">Only in Workday:</string>
+    <string name="alarmRuleComplyWorkdayTrue">YES</string>
+    <string name="alarmRuleComplyWorkdayFalse">NO</string>
+    <string name="alarmRuleRingtoneLabel">Ringtone:</string>
+    <string name="alarmRuleRingLabel">Ring:</string>
+    <string-array name="alarmRuleRing">
+        <item>Default</item>
+        <item>Ring</item>
+        <item>No Ring</item>
+    </string-array>
+    <string name="alarmRuleVibrateLabel">Vibrate:</string>
+    <string-array name="alarmRuleVibrate">
+        <item>Default</item>
+        <item>Vibrate</item>
+        <item>No Vibrate</item>
+    </string-array>
+    <string name="alarmRuleAlarmTimeLabel">Alarm Time:</string>
+    <string-array name="alarmRuleAlarmTimeEntries">
+        <item>Default</item>
+        <item>Ringtone Length</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+    <string-array name="alarmRuleAlarmTimeEntryValues">
+        <item>0</item>
+        <item>-1</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="alarmRuleAlarmTimeNoRingtoneEntries">
+        <item>Default</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+    <string-array name="alarmRuleAlarmTimeNoRingtoneEntryValues">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+    <string name="alarmRuleAddSuccess">Alarm Added</string>
+    <string name="alarmRuleUpdateSuccess">Alarm Updated</string>
+    <string name="alarmRuleDeleteSuccess">Alarm Deleted</string>
+    <string name="errAlarmRuleQueryAllFailed">Error: Query all alarm failed!</string>
+    <string name="errAlarmRuleAddFailed">Error: Add alarm failed!</string>
+    <string name="errAlarmRuleDeleteFailed">Error: Delete alarm failed!</string>
+    <string name="errAlarmRuleUpdateFailed">Error: Update alarm failed!</string>
+    <string name="errAlarmRuleUpdateEnabledFailed">Error: Update alarm enabled failed!</string>
+    <string name="errAlarmRuleNoItemToView">Error: No alarm to view!</string>
+    <string name="errAlarmRuleNoItemToEdit">Error: No alarm to Edit!</string>
+
+    <string name="workdayListTitle">Workday</string>
+    <string name="workdayViewTitle">Workday Detail</string>
+    <string name="workdayEditTitle">Edit Workday</string>
+    <string name="workdayNewTitle">New Workday</string>
+    <string name="workdayNoRecord">No Workday Defined</string>
+    <string name="workdayNameLabel">Name:</string>
+    <string name="workdayNameDefault">Workday</string>
+    <string name="workdayDateRuleLabel">Date Rule:</string>
+    <string name="workdayAddSuccess">Workday Added</string>
+    <string name="workdayUpdateSuccess">Workday Updated</string>
+    <string name="workdayDeleteSuccess">Workday Deleted</string>
+    <string name="workdayDefaultName">Default Workday</string>
+    <string name="errWorkdayQueryAllFailed">Error: Query all workday failed!</string>
+    <string name="errWorkdayAddFailed">Error: Add workday failed!</string>
+    <string name="errWorkdayAddFailedLocationUsed">Error: The location is already used!</string>
+    <string name="errWorkdayDeleteFailed">Error: Delete workday failed!</string>
+    <string name="errWorkdayUpdateFailed">Error: Update workday failed!</string>
+    <string name="errWorkdayUpdateFailedLocationUsed">Error: The location is already used!</string>
+    <string name="errWorkdayNoItemToView">Error: No workday to view!</string>
+    <string name="errWorkdayNoItemToEdit">Error: No workday to Edit!</string>
+
+    <string name="ruleEditTip">Click rule to edit\nLong press and drag to reorder</string>
+    <string name="dialogEditEModeTitle">Edit Effect Mode</string>
+    <string name="dialogEditRuleTitle">Edit Rule</string>
+    <string-array name="dateRuleEMode">
+        <item>Within</item>
+        <item>Plus</item>
+        <item>Subtract</item>
+    </string-array>
+    <string-array name="dateRuleTypeName">
+        <item>Selected Dates</item>
+        <item>Everyday</item>
+        <item>Day of Week</item>
+        <item>Day of Week in Month</item>
+        <item>Day of Last Week in Month</item>
+        <item>Day of Month</item>
+        <item>Day Month Range</item>
+        <item>Day Month Year Range</item>
+        <item>Alarm X Off Y Days</item>
+    </string-array>
+    <string-array name="dateRuleType">
+        <item>8</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="dateRuleWeekInMonth1"></string>
+    <string name="dateRuleWeekInMonth2"></string>
+    <string name="dateRuleWeekInMonth3">of every month</string>
+    <string name="dateRuleRevWeekInMonth1"></string>
+    <string name="dateRuleRevWeekInMonth2">to last</string>
+    <string name="dateRuleRevWeekInMonth3">of every month</string>
+    <string name="dateRuleDayMonthRangeFrom">From:</string>
+    <string name="dateRuleDayMonthRangeTo">To:</string>
+    <string name="dateRuleDayMonthYearRangeFrom">From:</string>
+    <string name="dateRuleDayMonthYearRangeTo">To:</string>
+    <string name="dateRuleAlarmXOffYDaysStart">Start From:</string>
+    <string name="dateRuleAlarmXOffYDaysAlarm">Alarm:</string>
+    <string name="dateRuleAlarmXOffYDaysOff">Then Off:</string>
+    <string name="dateRuleAlarmXOffYDaysDays">days</string>
+    <string name="dateRuleAlarmXOffYDaysDefaultX">21</string>
+    <string name="dateRuleAlarmXOffYDaysDefaultY">7</string>
+    <string name="errDateRuleAtLeastOne">Error: At least one rule should be exist!</string>
+    <string name="errDateRuleDayOfWeekEmpty">Error: At least one day should be selected!</string>
+    <string name="errDateRuleDayOfMonthEmpty">Error: At least one day should be selected!</string>
+    <string name="errDateRuleDayMonthRangeError">Error: From date should before To date!</string>
+    <string name="errDateRuleDayMonthYearRangeError">Error: From date should before To date!</string>
+
+    <string name="ringtonePickerTitle">Ringtone Picker</string>
+    <string name="ringtoneTypePreference">Preference</string>
+    <string name="ringtoneTypePreferenceDesc">Ringtone in preference.</string>
+    <string name="ringtoneTypeDefault">Default</string>
+    <string name="ringtoneTypeDefaultDesc">Default ringtone.</string>
+    <string name="ringtoneTypeRingtone">Ringtone</string>
+    <string name="ringtoneTypeRingtoneDesc">Click to select from ringtones…</string>
+    <string name="ringtoneTypeMusic">Music</string>
+    <string name="ringtoneTypeMusicDesc">Click to select from musics…</string>
+    <string name="ringtoneVolume">Volume:</string>
+    <string name="ringtoneFadeInTime">Fade In Time:</string>
+    <string name="ringtonePreview">Preview:</string>
+    <string-array name="ringtoneFadeInTimeEntries">
+        <item>No Fade In</item>
+        <item>10 Seconds</item>
+        <item>20 Seconds</item>
+        <item>30 Seconds</item>
+        <item>1 Minutes</item>
+    </string-array>
+    <string-array name="ringtoneFadeInTimeValues">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string name="ringtonePreviewPlay">Playing…</string>
+    <string name="ringtonePreviewStop">Stopped</string>
+    <string name="errOpenRingtonePicker">Error: Cannot open ringtone picker! Probably a bug of Samsung Device, please try select Music.</string>
+    <string name="errOpenMusicPicker">Error: Cannot open music picker!</string>
+
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string-array name="dayOfWeekName">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="dayOfWeekNameShort">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string-array name="dayOfWeekNameHeader">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="dayOfMonth">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="monthName">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="monthNameShort">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="order">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </string-array>
+
+    <string name="ruleDescNoDay">No Day</string>
+    <string name="ruleDescEveryday">Everyday</string>
+    <string name="ruleDescDayOfWeekSep">,</string>
+    <string name="ruleDescDayOfWeek">%1$s of every week</string>
+    <string name="ruleDescDayOfMonthSep">,</string>
+    <string name="ruleDescDayOfMonth">%1$s of every month</string>
+    <string name="ruleDescDayOfWeekInMonthSep">,</string>
+    <string name="ruleDescDayOfWeekInMonth">%1$s %2$s of every month</string>
+    <string name="ruleDescRevDayOfWeekInMonth">%1$s to last %2$s of every month</string>
+    <string name="ruleDescDayOfLastWeekInMonth">Last %1$s of every month</string>
+    <string name="ruleDescDayMonthRange">From %1$s to %2$s</string>
+    <string name="ruleDescDayMonthYearRange">From %1$s to %2$s</string>
+    <string name="ruleDescAlarmXOffYDays">Start from %1$s, Alarm %2$d then Off %3$d days</string>
+    <string name="ruleDescDayMonthYearListSep">,\n</string>
+    <string name="ruleDescDayMonthYearListEmpty">No Dates Selected</string>
+    <string name="ruleDescUnknown">Unknown</string>
+    <string name="ruleDescSingleLine">%1$s, %2$s %3$s</string>
+
+    <string name="notifyPopupHourMinute">%1$s\nIn %2$s hours and %3$s minutes</string>
+    <string name="notifyPopupDayHourMinute">%1$s\nIn %2$s days, %3$s hours and %4$s minutes</string>
+    <string name="notifyScheduleFlow">Next Alarm: %1$s\nAt %2$s\nBy Power Alarm</string>
+    <string name="notifyScheduleTitle">%1$s, %2$s</string>
+    <string name="notifyScheduleDescHourMinute">At %1$s. In %2$s hr %3$s min.</string>
+    <string name="notifyScheduleDescDayHourMinute">At %1$s. In %2$s d, %3$s hr %4$s min.</string>
+    <string name="notifyScheduleSnoozedFlow">Next Alarm: %1$s\nSnoozed to %2$s\nBy Power Alarm</string>
+    <string name="notifyScheduleSnoozedTitle">%1$s</string>
+    <string name="notifyScheduleSnoozedDesc">Snoozed in %1$s minutes.</string>
+    <string name="notifyAlarmFlow">Now alarming %1$s</string>
+    <string name="notifyAlarmTitle">%1$s</string>
+    <string name="notifyAlarmDesc">Alarming…</string>
+    <string name="notifySnoozedFlow">%1$s\nSnoozed to %2$s</string>
+    <string name="notifyTimeoutFlow">%1$s\nFinished at %2$s</string>
+    <string name="notifyTimeoutTitle">%1$s</string>
+    <string name="notifyTimeoutDesc">Finished at %1$s</string>
+    <string name="notifyDismissSnoozedConfirm">Dismiss snoozed alarm %1$s?</string>
+
+    <string name="preferenceTitle">Preferences</string>
+    <string name="pref_categoryDefaultSetting">Default Alarm Setting</string>
+    <string name="pref_ringLabel">Ring</string>
+    <string name="pref_ringtoneLabel">Ringtone</string>
+    <string name="pref_ringtoneDefaultDesc">Default Ringtone</string>
+    <string name="pref_speakAlarmNameLabel">Say Alarm Name</string>
+    <string name="pref_speakAlarmNameYesDesc">Say alarm\'s name and time when alarm rings.</string>
+    <string name="pref_speakAlarmNameNoDesc">Don\'t say alarm\'s name when alarm rings.</string>
+    <string name="pref_speakAlarmNameTips">Only English supported now.\nIf you got an \"TTS Error\" when alarm rings, please uncheck this.</string>
+    <string name="pref_speakAlarmNameNotSupportTips">Looks like TextToSpeech is not supported in this device. Don\'t use this…</string>
+    <string name="pref_vibrateLabel">Vibrate</string>
+    <string name="pref_alarmTimeLabel">Alarm Time</string>
+    <string name="pref_snoozeTimeLabel">Snooze Time</string>
+    <string name="pref_autoSnoozeTimesLabel">Auto Snooze Times</string>
+    <string name="pref_categoryDateTimeFormat">Date Time Format</string>
+    <string name="pref_dateFormatLabel">Date Format</string>
+    <string name="pref_time24HourFormatLabel">24 Hour Format</string>
+    <string name="pref_time24HourFormatYesDesc">Time shown as 17:00.</string>
+    <string name="pref_time24HourFormatNoDesc">Time shown as 05:00 PM.</string>
+    <string name="pref_firstDaySundayLabel">Sunday is First Day</string>
+    <string name="pref_firstDaySundayDesc">Sunday is first day of week.</string>
+    <string name="pref_firstDayMondayDesc">Monday is first day of week.</string>
+    <string name="pref_categoryDisplay">Display</string>
+    <string name="pref_largeSnoozeButtonLabel">Large Snooze Button</string>
+    <string name="pref_largeSnoozeButtonYesDesc">Show a very large snooze button when alarm rings.</string>
+    <string name="pref_largeSnoozeButtonNoDesc">Show a normal size snooze button when alarm rings.</string>
+    <string name="pref_disableButtonInPocketLabel">Disable Button in Pocket</string>
+    <string name="pref_disableButtonInPocketYesDesc">Disable alarm button when device in pocket.</string>
+    <string name="pref_disableButtonInPocketNoDesc">Don\'t disable alarm button when device in pocket.</string>
+    <string name="pref_alarmTimeNotificationLabel">Next Alarm Notification</string>
+    <string name="pref_alarmTimeNotificationYesDesc">Show next alarm time in notification bar.</string>
+    <string name="pref_alarmTimeNotificationNoDesc">Don\'t show next alarm time in notification bar.</string>
+    <string name="pref_popupNotificationLabel">Popup Notification</string>
+    <string name="pref_popupNotificationYesDesc">Show popup notifications.</string>
+    <string name="pref_popupNotificationNoDesc">Don\'t show popup notifications.</string>
+    <string name="pref_showInactiveScheduleLabel">Show Inactive Schedules</string>
+    <string name="pref_showInactiveScheduleYesDesc">Show inactive schedules in schedule list.</string>
+    <string name="pref_showInactiveScheduleNoDesc">Don\'t show inactive schedules in schedule list.</string>
+    <string-array name="pref_ringEntries">
+        <item>Device Setting</item>
+        <item>Ring</item>
+        <item>No Ring</item>
+    </string-array>
+    <string-array name="pref_ringEntryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_vibrateEntries">
+        <item>Device Setting</item>
+        <item>Vibrate</item>
+        <item>No Vibrate</item>
+    </string-array>
+    <string-array name="pref_vibrateEntryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_alarmTimeEntries">
+        <item>Ringtone Length</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+    <string-array name="pref_alarmTimeEntryValues">
+        <item>-1</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="pref_alarmTimeNoRingtoneEntries">
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+    <string-array name="pref_alarmTimeNoRingtoneEntryValues">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+    <string-array name="pref_snoozeTimeEntries">
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+    <string-array name="pref_snoozeTimeEntryValues">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="pref_autoSnoozeTimesEntries">
+        <item>No Auto Snooze</item>
+        <item>1 Times</item>
+        <item>2 Times</item>
+        <item>3 Times</item>
+        <item>5 Times</item>
+        <item>Unlimit</item>
+    </string-array>
+    <string-array name="pref_autoSnoozeTimesValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>2147483647</item><!-- max value of Integer -->
+    </string-array>
+    <string-array name="pref_dateFormatEntries">
+        <item>Month/Day/Year</item>
+        <item>Day/Month/Year</item>
+        <item>Year/Month/Day</item>
+        <item>Month-Day-Year</item>
+        <item>Day-Month-Year</item>
+        <item>Year-Month-Day</item>
+        <item>Month.Day.Year</item>
+        <item>Day.Month.Year</item>
+        <item>Year.Month.Day</item>
+    </string-array>
+    <string-array name="pref_dateFormatEntryValues">
+        <item>MM/dd/yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>yyyy/MM/dd</item>
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+        <item>MM.dd.yyyy</item>
+        <item>dd.MM.yyyy</item>
+        <item>yyyy.MM.dd</item>
+    </string-array>
+    <string name="pref_categoryOther">Other</string>
+    <string name="pref_streamTypeLabel">Stream Channel</string>
+    <string-array name="pref_streamTypeEntries">
+        <item>System</item>
+        <item>Ring</item>
+        <item>Music</item>
+        <item>Alarm (Default)</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="pref_streamTypeValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="pref_ttsStreamTypeLabel">TTS Stream Channel</string>
+    <string-array name="pref_ttsStreamTypeEntries">
+        <item>System</item>
+        <item>Ring</item>
+        <item>Music (Default)</item>
+        <item>Alarm</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="pref_ttsStreamTypeValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="errServiceNotBind">Error: Service not bind!</string>
+    <string name="errServiceDisconnected">Error: Service disconnected!</string>
+
+    <string name="version">Version:</string>
+    <string name="build">Build:</string>
+    <string name="studio">© InfiniteSpace Studio, 2015</string>
+    <string name="author"><a href="mailto:iss.jfk@gmail.com?Subject=About%20Power%20Alarm">Jimmy F. Klarke</a></string>
+    <string name="iconLicenseLabel">Alarm Clock icon provided by:</string>
+    <string name="iconLicense"><a href="http://www.visualpharm.com">VisualPharm</a></string>
+</resources>

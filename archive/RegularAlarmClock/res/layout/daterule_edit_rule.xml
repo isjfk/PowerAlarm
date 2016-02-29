@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/listItem"
+        android:orientation="vertical">
+
+    <Spinner style="@style/listItem" android:id="@+id/ruleType" android:entries="@array/dateRuleTypeName" />
+    <ScrollView
+            style="@style/listItem"
+            android:id="@+id/dateRuleView"
+            android:scrollbarStyle="insideInset" />
+
+</LinearLayout>

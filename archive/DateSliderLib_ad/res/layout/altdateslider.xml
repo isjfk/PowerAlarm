@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.isjfk.android.racad.SliderContainer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.isjfk.android.racad"
+    android:id="@+id/dateSliderContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <com.isjfk.android.racad.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.isjfk.android.racad.labeler.YearLabeler"
+        app:labelerFormat="%tY"
+        app:childWidth="180dp"/>
+    <com.isjfk.android.racad.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.isjfk.android.racad.labeler.MonthLabeler"
+        app:labelerFormat="%tB"
+        app:childWidth="160dp"/>
+    <com.isjfk.android.racad.ScrollLayout
+        style="@style/Scroller"
+        app:labelerClass="com.isjfk.android.racad.labeler.DayDateLabeler"
+        app:labelerFormat="%td %ta"
+        app:childWidth="45dp"/>
+    <include layout="@layout/dialogbuttons"/>
+</com.isjfk.android.racad.SliderContainer>

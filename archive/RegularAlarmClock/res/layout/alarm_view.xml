@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+    <TextView
+            style="@style/largeText"
+            android:id="@+id/alarmTime"
+            android:textSize="45sp"
+            android:gravity="center" />
+    <TextView
+            style="@style/largeTextDim"
+            android:id="@+id/alarmDesc"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp" />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+        <Button
+            android:id="@+id/dismissButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:text="@string/buttonDismiss"
+            android:enabled="false" />
+        <Button
+            android:id="@+id/snoozeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:text="@string/buttonSnooze"
+            android:enabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

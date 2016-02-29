@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Regular Alarm Clock" default="build_to_rac" basedir=".">
+
+    <property name="project.name" value="DateSliderLib" />
+    <property name="project_ad.name" value="DateSliderLib_ad" />
+    <property name="project.dir" location="${basedir}" />
+    <property name="project_ad.dir" location="${basedir}/../DateSliderLib_ad" />
+
+    <target name="build_to_rac">
+        <replace dir="${project.dir}" token="com.isjfk.android.racad" value="com.isjfk.android.racad" encoding="utf-8" summary="yes" />
+        <move file="${project.dir}/src/com/googlecode/android/widgets/DateSlider" tofile="${project.dir}/src/com/isjfk/android/rac" verbose="yes" />
+    	<delete dir="${project.dir}/src/com/googlecode" />
+
+        <delete dir="${project_ad.dir}" />
+        <mkdir dir="${project_ad.dir}" />
+
+        <copy todir="${project_ad.dir}">
+            <fileset dir="${project.dir}">
+                <exclude name="bin/**"/>
+                <exclude name="gen/**"/>
+            </fileset>
+        </copy>
+
+        <replace file="${project_ad.dir}/.project" token="${project.name}" value="${project_ad.name}" encoding="utf-8" summary="yes" />
+        <replace dir="${project_ad.dir}" token="com.isjfk.android.racad" value="com.isjfk.android.racadad" encoding="utf-8" summary="yes" />
+
+        <move file="${project_ad.dir}/src/com/isjfk/android/rac" tofile="${project_ad.dir}/src/com/isjfk/android/racad" verbose="yes" />
+    </target>
+
+</project>

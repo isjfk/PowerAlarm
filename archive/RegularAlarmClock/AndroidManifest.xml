@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.isjfk.android.rac"
+        android:versionName="2.5p6"
+        android:versionCode="168">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+-->
+
+    <application
+            android:icon="@drawable/clock_launcher"
+            android:label="@string/appName"
+            android:name=".RegularAlarmApplication"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:allowBackup="true">
+
+<!--
+        <uses-library android:name="com.google.android.maps" />
+-->
+
+        <provider
+                android:label="@string/dataProviderName"
+                android:name=".RegularAlarmDataProvider"
+                android:authorities="com.isjfk.android.rac.regularalarmdataprovider"
+                android:exported="false" />
+
+        <service
+                android:label="@string/dataServiceName"
+                android:name=".RegularAlarmDataService" />
+
+        <service
+                android:label="@string/alarmServiceName"
+                android:name=".RegularAlarmService" />
+
+        <receiver
+                android:label="@string/alarmReceiverName"
+                android:name=".RegularAlarmReceiver"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="com.isjfk.android.rac.SCHEDULE_REFRESH" />
+                <action android:name="com.isjfk.android.rac.ALARM_ALERT" />
+                <action android:name="com.isjfk.android.rac.ALARM_ACTIVITY" />
+                <action android:name="com.isjfk.android.rac.NOTIFY_REFRESH" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+                android:label="@string/appName"
+                android:name=".activity.ScheduleListActivity"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:label="@string/alarmRuleListTitle"
+                android:name=".activity.AlarmRuleListActivity"
+                android:launchMode="singleTask">
+        </activity>
+
+        <activity
+                android:label="@string/alarmRuleViewTitle"
+                android:name=".activity.AlarmRuleViewActivity"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/alarmRuleEditTitle"
+                android:name=".activity.AlarmRuleEditActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/workdayListTitle"
+                android:name=".activity.WorkdayListActivity"
+                android:launchMode="singleTask">
+        </activity>
+
+        <activity
+                android:label="@string/workdayViewTitle"
+                android:name=".activity.WorkdayViewActivity"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/workdayEditTitle"
+                android:name=".activity.WorkdayEditActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/alarmName"
+                android:name=".activity.AlarmActivity"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+                android:excludeFromRecents="true"
+                android:taskAffinity=""
+                android:launchMode="singleInstance">
+        </activity>
+
+        <activity
+                android:label="@string/dismissSnoozedAlarmName"
+                android:name=".activity.DismissSnoozedConfirmActivity"
+                android:excludeFromRecents="true"
+                android:theme="@style/dialogActivity"
+                android:taskAffinity=""
+                android:launchMode="singleInstance">
+        </activity>
+
+        <activity
+                android:label="@string/preferenceTitle"
+                android:name=".activity.RACPreferenceActivity"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/aboutName"
+                android:name=".activity.AboutActivity"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/ringtonePickerTitle"
+                android:name=".activity.RingtonePickerActivity"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:label="@string/helpName"
+                android:name=".activity.HelpActivity"
+                android:excludeFromRecents="true">
+        </activity>
+
+        <activity
+                android:name="com.google.ads.AdActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+    </application>
+
+</manifest>

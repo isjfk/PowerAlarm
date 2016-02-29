@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear"
+        android:fillViewport="true"
+        android:padding="15dp"
+        android:baselineAligned="false">
+
+    <ScrollView style="@style/listItem" android:layout_weight="1">
+        <LinearLayout
+                style="@style/listItem"
+                android:orientation="vertical"
+                android:gravity="top">
+            <LinearLayout style="@style/ringtoneGroup" android:id="@+id/ringtoneTypePreferenceGroup">
+                <RadioButton
+                        style="@style/ringtoneRadioButton"
+                        android:id="@+id/ringtoneTypePreferenceButton"
+                        android:checked="false" />
+                <LinearLayout style="@style/ringtoneItem" android:id="@+id/ringtoneTypePreferenceText">
+                    <TextView style="@style/ringtoneTypeLabel" android:text="@string/ringtoneTypePreference" />
+                    <TextView
+                            style="@style/ringtoneTypeDesc"
+                            android:id="@+id/ringtoneTypePreferenceDesc"
+                            android:text="@string/ringtoneTypePreferenceDesc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/ringtoneGroup" android:id="@+id/ringtoneTypeDefaultGroup">
+                <RadioButton
+                        style="@style/ringtoneRadioButton"
+                        android:id="@+id/ringtoneTypeDefaultButton"
+                        android:checked="true" />
+                <LinearLayout style="@style/ringtoneItem" android:id="@+id/ringtoneTypeDefaultText">
+                    <TextView style="@style/ringtoneTypeLabel" android:text="@string/ringtoneTypeDefault" />
+                    <TextView
+                            style="@style/ringtoneTypeDesc"
+                            android:id="@+id/ringtoneTypeDefaultDesc"
+                            android:text="@string/ringtoneTypeDefaultDesc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/ringtoneGroup" android:id="@+id/ringtoneTypeRingtoneGroup">
+                <RadioButton
+                        style="@style/ringtoneRadioButton"
+                        android:id="@+id/ringtoneTypeRingtoneButton"
+                        android:checked="false" />
+                <LinearLayout style="@style/ringtoneItem" android:id="@+id/ringtoneTypeRingtoneText">
+                    <TextView style="@style/ringtoneTypeLabel" android:text="@string/ringtoneTypeRingtone" />
+                    <TextView
+                            style="@style/ringtoneTypeDesc"
+                            android:id="@+id/ringtoneTypeRingtoneDesc"
+                            android:text="@string/ringtoneTypeRingtoneDesc" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/ringtoneGroup" android:id="@+id/ringtoneTypeMusicGroup">
+                <RadioButton
+                        style="@style/ringtoneRadioButton"
+                        android:id="@+id/ringtoneTypeMusicButton"
+                        android:checked="false" />
+                <LinearLayout style="@style/ringtoneItem" android:id="@+id/ringtoneTypeMusicText">
+                    <TextView style="@style/ringtoneTypeLabel" android:text="@string/ringtoneTypeMusic" />
+                    <TextView
+                            style="@style/ringtoneTypeDesc"
+                            android:id="@+id/ringtoneTypeMusicDesc"
+                            android:text="@string/ringtoneTypeMusicDesc" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/ringtonePickerListItem" android:id="@+id/ringtoneVolumeGroup">
+                <TextView style="@style/ringtonePickerListItemLabel" android:text="@string/ringtoneVolume" />
+                <SeekBar
+                        style="@style/listItem"
+                        android:id="@+id/ringtoneVolumeBar"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ringtonePickerListItem" android:id="@+id/ringtoneFadeInTimeGroup">
+                <TextView style="@style/ringtonePickerListItemLabel" android:text="@string/ringtoneFadeInTime" />
+                <Spinner
+                        style="@style/listItem"
+                        android:id="@+id/ringtoneFadeInTime"
+                        android:entries="@array/ringtoneFadeInTimeEntries"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ringtonePickerListItem">
+                <TextView style="@style/ringtonePickerListItemLabel" android:text="@string/ringtonePreview" />
+                <ToggleButton
+                        android:id="@+id/ringtonePreview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textOn="@string/ringtonePreviewPlay"
+                        android:textOff="@string/ringtonePreviewStop"
+                        android:checked="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+            style="@style/listItem"
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp">
+        <Button
+            style="@style/toolBarButton"
+            android:id="@+id/okButton"
+            android:text="@string/buttonOK" />
+        <Button
+            style="@style/toolBarButton"
+            android:id="@+id/cancelButton"
+            android:text="@string/buttonCancel" />
+    </LinearLayout>
+</LinearLayout>

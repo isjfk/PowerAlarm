@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear">
+
+    <LinearLayout style="@style/titleBar" android:id="@+id/titleBar">
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarBackButton"
+                android:text="@string/titleBarBackButton" />
+        <TextView
+                style="@style/titleBarText"
+                android:id="@+id/titleBarText"
+                android:text="@string/helpName" />
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarEditButton"
+                android:visibility="invisible"
+                android:text="@string/titleBarEditButton" />
+    </LinearLayout>
+
+    <WebView android:id="@+id/webContent" style="@style/mainListBody" />
+
+</LinearLayout>

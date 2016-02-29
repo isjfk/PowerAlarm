@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Regular Alarm Clock" default="gen_ad_version" basedir=".">
+
+    <property name="project.name" value="RegularAlarmClock" />
+    <property name="project_ad.name" value="RegularAlarmClock_ad" />
+    <property name="project.dir" location="${basedir}" />
+    <property name="project_ad.dir" location="${basedir}/../RegularAlarmClock_ad" />
+
+    <target name="gen_ad_version">
+        <delete dir="${project_ad.dir}" />
+        <mkdir dir="${project_ad.dir}" />
+
+        <copy todir="${project_ad.dir}">
+            <fileset dir="${project.dir}">
+                <exclude name="bin/**"/>
+                <exclude name="gen/**"/>
+            </fileset>
+        </copy>
+
+        <replace file="${project_ad.dir}/.project" token="${project.name}" value="${project_ad.name}" encoding="utf-8" summary="yes" />
+    	<replace file="${project_ad.dir}/project.properties" token="DateSliderLib" value="DateSliderLib_ad" encoding="utf-8" summary="yes" />
+        <replace dir="${project_ad.dir}" token="com.isjfk.android.rac" value="com.isjfk.android.racad" encoding="utf-8" summary="yes" />
+
+        <move file="${project_ad.dir}/src/com/isjfk/android/rac" tofile="${project_ad.dir}/src/com/isjfk/android/racad" verbose="yes" />
+    </target>
+
+</project>

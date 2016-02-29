@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear">
+
+    <LinearLayout style="@style/titleBar" android:id="@+id/titleBar">
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarBackButton"
+                android:visibility="visible"
+                android:text="@string/titleBarBackButton" />
+        <TextView
+                style="@style/titleBarText"
+                android:id="@+id/titleBarText"
+                android:text="@string/workdayEditTitle" />
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarSaveButton"
+                android:visibility="visible"
+                android:text="@string/titleBarSaveButton" />
+    </LinearLayout>
+
+    <ScrollView style="@style/mainContent">
+        <LinearLayout style="@style/mainContentLinear">
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/workdayNameLabel" />
+            <com.isjfk.android.rac.widget.EditTextDefault
+                    style="@style/contentEditText"
+                    android:id="@+id/workdayName"
+                    android:hint="@string/workdayNameDefault"
+                    android:imeOptions="actionDone" />
+            <TextView
+                    style="@style/contentLabel"
+                    android:text="@string/workdayDateRuleLabel" />
+            <com.isjfk.android.rac.widget.DateRuleListEditor
+                    style="@style/contentListForEdit"
+                    android:id="@+id/dateRuleListEditor" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

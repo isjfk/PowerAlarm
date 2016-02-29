@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/contentListFooter">
+
+    <TextView
+            style="@style/dateRuleItemTextView"
+            android:id="@+id/dateRuleOneTime"
+            android:text="@string/alarmRuleNoRepeatRule"
+            android:visibility="gone" />
+    <ImageButton
+            style="@style/dateRuleListAddButton"
+            android:id="@+id/dateRuleListAddButton"
+            android:contentDescription="@string/buttonAdd" />
+
+</LinearLayout>

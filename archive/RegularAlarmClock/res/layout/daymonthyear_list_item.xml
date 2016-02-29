@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/mainListItem"
+        android:orientation="horizontal">
+    <ImageButton
+            style="@style/dateRuleListDelButton"
+            android:id="@+id/dayMonthYearListItemDelButton"
+            android:contentDescription="@string/buttonDelete" />
+    <com.isjfk.android.rac.widget.DayMonthYearPicker
+            style="@style/listItem"
+            android:id="@+id/dayMonthYearListItemPicker"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+</LinearLayout>

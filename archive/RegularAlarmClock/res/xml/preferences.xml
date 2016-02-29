@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_categoryDefaultSetting">
+        <ListPreference
+                android:key="ring"
+                android:defaultValue="1"
+                android:title="@string/pref_ringLabel"
+                android:entries="@array/pref_ringEntries"
+                android:entryValues="@array/pref_ringEntryValues" />
+        <com.isjfk.android.rac.widget.RingtoneConfigPreference
+                android:key="ringtone"
+                android:title="@string/pref_ringtoneLabel" />
+        <CheckBoxPreference
+                android:key="speakAlarmName"
+                android:defaultValue="false"
+                android:title="@string/pref_speakAlarmNameLabel"
+                android:summaryOn="@string/pref_speakAlarmNameYesDesc"
+                android:summaryOff="@string/pref_speakAlarmNameNoDesc" />
+        <ListPreference
+                android:key="vibrate"
+                android:defaultValue="1"
+                android:title="@string/pref_vibrateLabel"
+                android:entries="@array/pref_vibrateEntries"
+                android:entryValues="@array/pref_vibrateEntryValues" />
+        <ListPreference
+                android:key="alarmTime"
+                android:defaultValue="60"
+                android:title="@string/pref_alarmTimeLabel"
+                android:entries="@array/pref_alarmTimeEntries"
+                android:entryValues="@array/pref_alarmTimeEntryValues" />
+        <ListPreference
+                android:key="snoozeTime"
+                android:defaultValue="10"
+                android:title="@string/pref_snoozeTimeLabel"
+                android:entries="@array/pref_snoozeTimeEntries"
+                android:entryValues="@array/pref_snoozeTimeEntryValues" />
+        <ListPreference
+                android:key="autoSnoozeTimes"
+                android:defaultValue="2"
+                android:title="@string/pref_autoSnoozeTimesLabel"
+                android:entries="@array/pref_autoSnoozeTimesEntries"
+                android:entryValues="@array/pref_autoSnoozeTimesValues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_categoryDateTimeFormat">
+        <ListPreference
+                android:key="dateFormat"
+                android:defaultValue="MM/dd/yyyy"
+                android:title="@string/pref_dateFormatLabel"
+                android:entries="@array/pref_dateFormatEntries"
+                android:entryValues="@array/pref_dateFormatEntryValues" />
+        <CheckBoxPreference
+                android:key="time24HourFormat"
+                android:defaultValue="false"
+                android:title="@string/pref_time24HourFormatLabel"
+                android:summaryOn="@string/pref_time24HourFormatYesDesc"
+                android:summaryOff="@string/pref_time24HourFormatNoDesc" />
+        <CheckBoxPreference
+                android:key="firstDaySunday"
+                android:defaultValue="true"
+                android:title="@string/pref_firstDaySundayLabel"
+                android:summaryOn="@string/pref_firstDaySundayDesc"
+                android:summaryOff="@string/pref_firstDayMondayDesc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_categoryDisplay">
+        <CheckBoxPreference
+                android:key="largeSnoozeButton"
+                android:defaultValue="false"
+                android:title="@string/pref_largeSnoozeButtonLabel"
+                android:summaryOn="@string/pref_largeSnoozeButtonYesDesc"
+                android:summaryOff="@string/pref_largeSnoozeButtonNoDesc" />
+        <CheckBoxPreference
+                android:key="disableButtonInPocket"
+                android:defaultValue="true"
+                android:title="@string/pref_disableButtonInPocketLabel"
+                android:summaryOn="@string/pref_disableButtonInPocketYesDesc"
+                android:summaryOff="@string/pref_disableButtonInPocketNoDesc" />
+        <CheckBoxPreference
+                android:key="alarmTimeNotification"
+                android:defaultValue="true"
+                android:title="@string/pref_alarmTimeNotificationLabel"
+                android:summaryOn="@string/pref_alarmTimeNotificationYesDesc"
+                android:summaryOff="@string/pref_alarmTimeNotificationNoDesc" />
+        <CheckBoxPreference
+                android:key="popupNotification"
+                android:defaultValue="true"
+                android:title="@string/pref_popupNotificationLabel"
+                android:summaryOn="@string/pref_popupNotificationYesDesc"
+                android:summaryOff="@string/pref_popupNotificationNoDesc" />
+        <CheckBoxPreference
+                android:key="showInactiveSchedules"
+                android:defaultValue="false"
+                android:title="@string/pref_showInactiveScheduleLabel"
+                android:summaryOn="@string/pref_showInactiveScheduleYesDesc"
+                android:summaryOff="@string/pref_showInactiveScheduleNoDesc" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_categoryOther">
+        <ListPreference
+                android:key="streamType"
+                android:defaultValue="4"
+                android:title="@string/pref_streamTypeLabel"
+                android:entries="@array/pref_streamTypeEntries"
+                android:entryValues="@array/pref_streamTypeValues" />
+        <ListPreference
+                android:key="ttsStreamType"
+                android:defaultValue="3"
+                android:title="@string/pref_ttsStreamTypeLabel"
+                android:entries="@array/pref_ttsStreamTypeEntries"
+                android:entryValues="@array/pref_ttsStreamTypeValues" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/contentListItem"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/dateRuleListItem">
+
+    <LinearLayout style="@style/contentListItemForEditIcon">
+        <ImageButton
+                style="@style/dateRuleListDelButton"
+                android:id="@+id/dateRuleListDelButton"
+                android:contentDescription="@string/buttonDelete" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                style="@style/dateRuleItemLabel"
+                android:id="@+id/dateRuleEMode"
+                android:clickable="true"
+                android:longClickable="true"
+                android:hapticFeedbackEnabled="true" />
+        <TextView
+                style="@style/dateRuleItemTextView"
+                android:id="@+id/dateRuleDesc"
+                android:clickable="true"
+                android:longClickable="true"
+                android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+
+</LinearLayout>

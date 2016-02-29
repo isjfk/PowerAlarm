@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        style="@style/mainLinear">
+
+    <LinearLayout style="@style/titleBar" android:id="@+id/titleBar">
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarBackButton"
+                android:text="@string/titleBarBackButton" />
+        <TextView
+                style="@style/titleBarText"
+                android:id="@+id/titleBarText"
+                android:text="@string/workdayListTitle" />
+        <Button
+                style="@style/titleBarButton"
+                android:id="@+id/titleBarAddButton"
+                android:visibility="visible"
+                android:text="@string/titleBarAddButton" />
+    </LinearLayout>
+
+    <ListView style="@style/mainListBody" android:id="@android:id/list" />
+    <TextView
+            style="@style/mainListEmptyText"
+            android:id="@android:id/empty"
+            android:text="@string/loading" />
+
+</LinearLayout>

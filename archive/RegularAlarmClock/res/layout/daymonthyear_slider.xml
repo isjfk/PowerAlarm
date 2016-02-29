@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.isjfk.android.rac.widget.RACSliderContainer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.isjfk.android.rac"
+        android:id="@+id/dateSliderContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <com.isjfk.android.rac.widget.RACScrollLayout
+            style="@style/Scroller"
+            app:labelerClass="com.isjfk.android.rac.labeler.MonthYearLabeler"
+            app:labelerFormat="%tb %tY"
+            app:childWidth="90dp" />
+    <com.isjfk.android.rac.widget.RACScrollLayout
+            style="@style/Scroller"
+            app:labelerClass="com.isjfk.android.rac.labeler.DayDateLabeler"
+            app:labelerFormat="%td %ta"
+            app:childWidth="45dp" />
+    <include layout="@layout/dialogbuttons"/>
+</com.isjfk.android.rac.widget.RACSliderContainer>

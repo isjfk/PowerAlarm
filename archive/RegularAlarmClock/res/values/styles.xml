@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="largeText" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+    <style name="largeTextDim" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+    <style name="mediumText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+    <style name="mediumTextDim" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+    <style name="smallText" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+    <style name="smallTextDim" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="listItem">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="divider" parent="listItem">
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="mainLinear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/common_bg</item>
+    </style>
+    <style name="titleBar" parent="listItem">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:background">@color/titleBar_bg</item>
+    </style>
+    <style name="titleBarButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:width">60dp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+    <style name="titleBarText" parent="@android:style/TextAppearance.WindowTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="toolBar" parent="titleBar" />
+    <style name="toolBarButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+    <style name="toolBarButtonSelected" parent="@style/toolBarButton">
+        <item name="android:clickable">false</item>
+        <item name="android:background">@drawable/button_selected</item>
+    </style>
+    <style name="toolBarMenuButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="mainListBody" parent="listItem">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="mainListEmptyText" parent="mainListBody">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_dim3</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="mainListItem" parent="listItem">
+        <item name="android:gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="mainContent" parent="listItem">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="mainContentLinear" parent="mainContent">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="contentLabel" parent="mediumText">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+    <style name="contentTextView" parent="mediumTextDim">
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="contentEditText" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:inputType">text</item>
+    </style>
+    <style name="contentItem" parent="listItem">
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="contentList" parent="contentItem">
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="contentListItem" parent="mainListItem">
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+    <style name="contentListForEdit" parent="contentList">
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+    <style name="contentListItemForEditIcon" parent="contentListItem">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="contentListFooter" parent="contentListItem">
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="timeView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="nextAlarmText" parent="largeText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="nextAlarmIntervalText" parent="mediumText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="timeText" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+    <style name="timeAMPMLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="timeAMPM" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="timeAMPMSep">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="alarmRuleTime" parent="largeTextDim">
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="ringText" parent="mediumTextDim" />
+
+    <style name="dateRuleItemLabel" parent="mediumText">
+        <item name="android:background">@drawable/text_bg</item>
+    </style>
+    <style name="dateRuleItemTextView" parent="mediumTextDim">
+        <item name="android:background">@drawable/text_bg</item>
+    </style>
+    <style name="dateRuleListAddButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/ic_menu_add</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    <style name="dateRuleListDelButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:drawable/ic_menu_delete</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+    <style name="dateRuleNumber" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:inputType">number</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="ringtoneRadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="ringtoneGroup" parent="listItem">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/text_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:hapticFeedbackEnabled">true</item>
+    </style>
+    <style name="ringtoneItem" parent="listItem">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="ringtoneTypeLabel" parent="mediumText" />
+    <style name="ringtoneTypeDesc" parent="smallTextDim" />
+    <style name="ringtonePickerListItem" parent="listItem">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="ringtonePickerListItemLabel" parent="mediumText" />
+    <style name="ringtonePickerListItemDesc" parent="smallTextDim" />
+
+
+    <style name="dialogActivity" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

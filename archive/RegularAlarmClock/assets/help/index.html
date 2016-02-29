@@ -1,0 +1,396 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Power Alarm Help</title>
+        <style type="text/css">
+            h1 { text-align: center }
+            em { color: red }
+            dt { font-weight: bold }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Power Alarm Help</h1>
+
+        <h2 id="contents">Contents</h2>
+
+        <p>
+            <ol>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#alarm">Alarm</a></li>
+                <ol>
+                    <li><a href="#alarm-create">Create/Edit Alarm</a></li>
+                </ol>
+                <li><a href="#workday">Workday</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+                <li><a href="#issues">Known Issues</a></li>
+                <li><a href="#thanks">Thanks</a></li>
+            </ol>
+        </p>
+
+
+        <h2 id="usage">1 Usage</h2>
+
+        <p>For quick setup follow these steps:
+            <ol>
+                <li>Open Power Alarm</li>
+                <li>Tap "Alarm" tab at bottom right corner to open Alarm view.</li>
+                <li>Tap "Add" button at top right corner to create new alarm.</li>
+                <li>Input alarm name, select which time alarm should go off.</li>
+                <li>If you want a cyclical repeating alarm, tap "+" button in
+                    "Repeat Rule", then tap "Everyday" to select other
+                    rules.</li>
+                <li>Tap "Save" at top right corner.</li>
+                <li>Tap "Schedule" at bottom left corner to see when alarms will go off.</li>
+                <li>You can also check when the next alarm will go off in notification bar.</li>
+            </ol>
+        </p>
+
+        <p>Following instructions will help you understand how Power Alarm
+        works as well as advanced features you may want to know.</p>
+
+        <p>In Power Alarm there are two important concepts; Alarm and Schedule.
+        Alarm is the rule you create to generate Schedule, while Schedule is
+        the actual time an alarm will go off. For example, if you create one Alarm to
+        go off at 8:00 everyday, you will in Schedule see entries at
+        8:00 today, tomorrow, the day after tomorrow, and so on.</p>
+
+        <p>When you open Power Alarm the Schedule view is presented, where you can
+        see when all alarms will go off for the following two weeks. You can also disable
+        the next alarm only, without affecting the others in the series. Check
+        <a href="#schedule">Schedule</a> for a brief introduction.</p>
+
+        <p>If you want to modify alarm rules, tap Alarm tab. The Alarm view
+        is presented, where you can create/modify/delete alarm rules, as well as
+        disable/enable alarm rules. Check <a href="#alarm">Alarm</a> for a
+        brief introduction.</p>
+
+        <p>After you modify alarm rules, the Schedule view will be updated
+        accordingly. Always go to Schedule view to make sure that the time at which the alarm should go off
+        is correct after you make modifications to an alarm rule.</p>
+
+        <p>After alarm is set, the next alarm time will be shown in
+        notification bar, as well as remaining time. Tapping the notification
+        bar message will open Power Alarm. You can disable
+        notification bar message in <a href="#preferences">Preferences</a>.</p>
+
+        <p>When an alarm goes off, you will find Dismiss and Snooze button in
+        Alarm view. The Snooze button is very large by default, however you
+        can choose to use a regular size Snooze button in
+        <a href="#preferences">Preferences</a>. The Dismiss and Snooze buttons
+        will be disabled for 2 seconds when alarm goes off, as well as after
+        the device is taken out of a pocket, to prevent misoperation.</p>
+
+        <p>If you tap "Dismiss" button, the alarm is dismissed and the next alarm
+        time will be set (if one exists).</p>
+
+        <p>If you tap "Snooze", the alarm will snooze and go off again 10
+        minutes later. Snooze time is configurable in
+        <a href="#preferences">Preferences</a>. After alarm snooze, you will
+        find a message in notification bar. Tap the message to dismiss the
+        snoozed alarm, a dialog will popup to confirm.</p>
+
+        <p>If you neither dismiss nor snooze the alarm, it will be snoozed
+        automatically after sometime. After 2 times of automatic snooze,
+        the alarm will be dismissed. A message will be left in notification
+        bar. Auto snooze times is configurable in
+        <a href="#preferences">Preferences</a>.</p>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h2 id="schedule">2 Schedule</h2>
+
+        <p>When Power Alarm is launched, the Schedule view is presented.
+        You can go back to Schedule view by tapping "Schedule" tab when you are in
+        Alarm view.</p>
+
+        <p>In Schedule view you will find a list of all alarms set to go off
+        the following two weeks. The alarm times are ordered by the time they
+        will go off. In addition, the very first entry shows the next alarm time as
+        well as remaining time.</p>
+
+        <p>To disable/enable a schedule, just tap the button on the right.
+        The disabled schedule will turn gray and will not go off. This feature is beneficial
+        if you for example have created an alarm rule to go off
+        at 7:00 everyday. Then it's possible to disable the alarm only for tomorrow
+        morning, the alarms for the day after tomorrow and following days will still go off as planned.</p>
+
+        <p>After you modify alarm rules, the Schedule view will be updated
+        accordingly. Always check Schedule view to make sure that the alarm time
+        is correct after you have modified an alarm rule.</p>
+
+        <a href="#title">Back to Top</a>
+
+        <h2 id="alarm">3 Alarm</h2>
+
+        <p>Open Alarm view by tapping "Alarm" tab when you are in Schedule view.
+        </p>
+
+        <p>Alarm view is where you can create, view, modify or delete alarm
+        rules. All alarm rules are listed in Alarm view. Tap an alarm rule to
+        edit it, press and hold to open context menu, where you can
+        view/delete/clone it.</p>
+
+        <p>To create a new alarm rule, tap "Add" button at the top right
+        corner.</p>
+
+        <p>To create a new alarm rule similar to an existing one, press and hold
+        an existing alarm rule and then tap "Clone" from context menu.</p>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h3 id="alarm-create">3.1 Create/Edit Alarm</h3>
+
+        <dl>
+            <dt>Name</dt>
+            <dd>Tap the text box to input alarm name. The alarm name will
+            be shown when the alarm goes off. It can also be spoken out loud by Power Alarm
+            if you <a href="#preferences">enable "Say Alarm Name" feature in
+            Preference view</a>.</dd>
+
+            <dt>Time</dt>
+            <dd>Scroll to change alarm time.</dd>
+
+            <dt>Repeat Rule</dt>
+            <dd>Initially the repeat rule is "One Time", which means the rule
+            is empty, and the alarm will only go off one time.<br/>
+            Tap "+" button to add a repeat rule, the edit rule menu is opened. Tap the list to select
+            what kind of rule you want to govern your alarm, and edit the corresponding options to your liking,
+            then press "OK". Under "Repeat Rule" you can at any time get back to the edit rule menu by tapping the name of the rule.
+            Available rule types are:
+                <ul>
+                    <li><strong>Selected Dates</strong>: selected arbitrary
+                        dates.</li>
+                    <li><strong>Everyday</strong>: will go off everyday.</li>
+                    <li><strong>Day of Week</strong>: select from Monday to
+                        Sunday, will go off every week.</li>
+                    <li><strong>Day of Week in Month</strong>: select from
+                        Monday to Sunday, will only go off on selected numerical week(s) (first, second, third etc) of every
+                        month.</li>
+                    <li><strong>Day of Last Week in Month</strong>: select
+                        from Monday to Sunday, will only go off in selected one week (last, second to last, etc) of
+                        every month.</li>
+                    <li><strong>Day of Month</strong>: selected days of every
+                        month.</li>
+                    <li><strong>Day Month Range</strong>: selected day and month range.</li>
+                    <li><strong>Day Month Year Range</strong>: selected day, month, and year
+                        range.</li>
+                    <li><strong>Alarm X Off Y Days</strong>: select a
+                        start date, an X and an Y. Alarm will go off on the start
+                        start date, continue going off for X days, then pause for
+                        Y days, then go off for X days again in a cycle.</li>
+                </ul>
+            Tap "trash" button to delete repeat rule.<br/>
+            If more then one repeat rule exists, beginning with the second rule there
+            will be a combining rule, tap "Plus" to select from:
+                <ul>
+                    <li><strong>Within</strong>: go off only on dates existing
+                    both in previous rules and this rule. e.g. [day1, day2,
+                    day3] Within [day1, day3, day4] will result in [day1,
+                    day3].</li>
+                    <li><strong>Plus</strong>: go off on all dates existing in
+                    previous rules and this rule. e.g. [day1, day2] Plus
+                    [day2, day3] will result in [day1, day2, day3].</li>
+                    <li><strong>Subtract</strong>: go off on dates existing in
+                    previous rules but not in this rule. e.g. [day1, day2,
+                    day3] Subtract [day3, day4] will result in [day1, day2].
+                    </li>
+                </ul>
+            Hence it's possible to combine more repeat rules to achieve more
+            complex results.<br/>
+            Press and hold on a repeat rule and drag to move its order in rule
+            list.
+            </dd>
+
+            <dt>Delete After Expired</dt>
+            <dd>Delete the alarm rule after the alarm has gone off if the alarm
+            is not configured to go off again.</dd>
+
+            <dt>Only on Workday</dt>
+            <dd>Will only go off on a workday if checked. This option is visible
+            only if the Repeat Rule is not "One Time".</dd>
+
+            <dt>Ring</dt>
+            <dd>Whether to play the ringtone when alarm goes off.
+                <ul>
+                    <li><strong>Default</strong>: according to
+                        <a href="#preferences">Preferences</a>.</li>
+                    <li><strong>Ring</strong>: always play ringtone.</li>
+                    <li><strong>No Ring</strong>: don't play ringtone.</li>
+                </ul>
+            </dd>
+
+            <dt>Ringtone</dt>
+            <dd>The ringtone to play when alarm goes off.</dd>
+
+            <dt>Vibrate</dt>
+            <dd>Toggle vibrate when alarm goes.
+                <ul>
+                    <li><strong>Default</strong>: according to
+                        <a href="#preferences">Preferences</a>.</li>
+                    <li><strong>Vibrate</strong>: always vibrate.</li>
+                    <li><strong>No Vibrate</strong>: don't vibrate.</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <p>Tap "Back" button at top left corner to exit without save.</p>
+
+        <p>Tap "Save" button at top right corner to save your new alarm
+        rule.</p>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h2 id="workday">4 Workday</h2>
+
+        <p>Tap "menu" key in Schedule or Alarm view, then tap "Workday"
+        to open workday list view. Tap on workday to edit, press and hold on
+        workday to open context menu, where you can view/delete workday.</p>
+
+        <p>In create/edit workday view, you can input name for workday, and
+        change workday date repeat rules just like in <a href="#alarm-create">
+        create/edit alarm</a>.</p>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h2 id="preferences">5 Preferences</h2>
+
+        <p>Tap "menu" key in Schedule or Alarm view, then tap
+        "Preferences" to open preferences view. Here you can change various
+        global settings. Some of the settings are described here:
+        </p>
+
+        <dl>
+            <dt>Ring</dt>
+            <dd>Whether to play ringtone or not when alarm goes off.
+                <ul>
+                    <li><strong>Device Setting</strong>: according to device
+                        ringtone setting.</li>
+                    <li><strong>Ring</strong>: always play ringtone.</li>
+                    <li><strong>No Ring</strong>: don't play ringtone.</li>
+                </ul>
+            </dd>
+
+            <dt>Ringtone</dt>
+            <dd>The ringtone to play when alarm goes off.</dd>
+
+            <dt>Say Alarm Name</dt>
+            <dd>If enabled, will speak the name of the alarm and current time when alarm goes off.
+            At the moment this feature only supports speaking in English and requires
+            TTS Engine as well as English language pack installed on Android to run correctly.
+            This feature works on most Android devices, but there are some where it may not.
+            <em><strong>If after enabling Say Alarm Name an error dialog is visible when alarm goes
+            off, disable it.</strong></em><br/>
+            <strong>Default to disabled.</strong></dd>
+
+            <dt>Vibrate</dt>
+            <dd>Whether to vibrate when alarm goes off.
+                <ul>
+                    <li><strong>Device Setting</strong>: according to device
+                        ringtone setting.</li>
+                    <li><strong>Vibrate</strong>: always vibrate.</li>
+                    <li><strong>No Vibrate</strong>: don't vibrate.</li>
+                </ul>
+            </dd>
+
+            <dt>Snooze Time</dt>
+            <dd>Time to wait before going off again after an alarm has been snoozed.</dd>
+
+            <dt>Max Auto Snooze Times</dt>
+            <dd>Number of times alarm will auto snooze if not dismissed/snoozed.
+            If set to "2 Times", alarm will go off for a total of three times.</dd>
+
+            <dt>Large Snooze Button</dt>
+            <dd>If checked, will show a very large snooze button when alarm goes off.
+            Otherwise a regular size snooze button will be shown.<br/>
+            <strong>Default to enabled.</strong></dd>
+
+            <dt>Disable Button in Pocket</dt>
+            <dd>Disable Dismiss/Snooze button when alarm goes off and the
+            device is located in your pocket. This feature was introduced to prevent
+            misoperation. If the device was put in pocket and taken out by
+            hand, your finger may touch Dismiss/Snooze button accidentally.
+            The button will become active 2 seconds after you have taken the
+            device out from your pocket.<br/>
+            <strong>Default to enabled.</strong></dd>
+
+            <dt>Next Alarm Notification</dt>
+            <dd>Show next alarm message in notification bar if checked.
+            Otherwise only alarming, snoozed and timeout alarm will be shown in
+            notification bar.<br/>
+            <strong>Default to enabled.</strong></dd>
+
+            <dt>Popup Notification</dt>
+            <dd>If checked will show popup notification when alarm is set/changed, or Alarm and
+            Schedule was modified. Otherwise only error level
+            popup notification will be shown (e.g. fail to create an alarm).
+            <br/>
+            <strong>Default to enabled.</strong>
+            </dd>
+
+            <dt>Show Inactive Schedules</dt>
+            <dd>Show schedules inactivated by Workday if checked. If you
+            create an alarm and enable the "Only on Workday" option, the alarm
+            will only go off on a workday. If this feature is disabled, you will
+            not see schedules on workdays generated from the alarm. If this
+            feature is enabled, you will be able to see schedules on workdays
+            generated from the alarm. Although the schedule will not go off,
+            you will still be able to disable it. If you change your workday
+            and the schedule becomes active, the disabled schedule will
+            still not go off.<br/>
+            <strong>Default to disabled.</strong> This feature may be useful if
+            you change workday frequently.</dd>
+
+            <dt>Stream Channel</dt>
+            <dd>Which channel used to play alarm sound. Default is Alarm. If
+            the ringtone didn't play on your device, try changing to a different
+            channel.</dd>
+
+            <dt>TTS Stream Channel</dt>
+            <dd>Which channel used to play TTS sound (Say Alarm Name feature).
+            Default is Music.</dd>
+        </dl>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h2 id="issues">6 Known Issues</h2>
+
+        <ol>
+            <li>Some SAMSUNG devices are bugging with Ringtone Picker. Don't
+                try Ringtone when you change alarm sound if you are using
+                a SAMSUNG device.</li>
+        </ol>
+
+        <a href="#title">Back to Top</a>
+
+
+        <h2 id="thanks">7 Thanks</h2>
+        <p>
+            Thanks to those who kindly help to improve this app (names ordered according to
+            time spent):
+            <ul>
+                <li>Andreas Nolda</li>
+                <li>Kls4477</li>
+                <li>Angelo Cannata</li>
+                <li>Ricky Chin</li>
+                <li>Ariel</li>
+                <li>Bradley Rimbléus</li>
+                <li>Edward Taylor</li>
+                <li>Svein Langmyren</li>
+                <li>Carla Rosenfield</li>
+                <li>Dennis Carwyr</li>
+            </ul>
+        </p>
+        <p>
+            Special thanks to Bradley Rimbléus for help improve this manual!
+        </p>
+
+        <a href="#title">Back to Top</a>
+
+    </body>
+</html>

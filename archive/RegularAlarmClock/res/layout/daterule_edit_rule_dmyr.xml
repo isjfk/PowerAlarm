@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/listItem"
+        android:stretchColumns="1">
+    <TableRow android:gravity="center_vertical">
+        <TextView
+                style="@style/mediumText"
+                android:text="@string/dateRuleDayMonthYearRangeFrom"
+                android:layout_width="wrap_content" />
+        <com.isjfk.android.rac.widget.DayMonthYearPicker
+                style="@style/listItem"
+                android:id="@+id/dayMonthYearRangeStart"
+                android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow android:gravity="center_vertical">
+        <TextView
+                style="@style/mediumText"
+                android:layout_width="wrap_content"
+                android:text="@string/dateRuleDayMonthYearRangeTo" />
+        <com.isjfk.android.rac.widget.DayMonthYearPicker
+                style="@style/listItem"
+                android:id="@+id/dayMonthYearRangeEnd"
+                android:layout_width="wrap_content" />
+    </TableRow>
+</TableLayout>

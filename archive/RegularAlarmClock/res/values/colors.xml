@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_bg">#000000</color>
+    <color name="titleBar_bg">#555555</color>
+    <color name="buttonNormal">#D7D7D7</color>
+    <color name="buttonPressed">#FFB700</color>
+    <color name="buttonSelected">#FFB700</color>
+    <color name="buttonTransparent">#00000000</color>
+    <color name="textNormal">#FFFFFF</color>
+    <color name="textPressed">#000000</color>
+    <color name="textSelected">#000000</color>
+    <color name="textBg">#00000000</color>
+    <color name="textBgPressed">#FFB700</color>
+    <color name="textBgSelected">#FFB700</color>
+    <color name="textDim">#CCCCCC</color>
+    <color name="textDim2">#999999</color>
+    <color name="textDim3">#777777</color>
+    <color name="textNextAlarm">#FFB700</color>
+</resources>
