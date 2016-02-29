@@ -1,7 +1,12 @@
 # Power Alarm Clock
 Set alarms to repeat by powerful date rules, which no other apps could do the same.
 
-> Recently there are reports that this app did not work in some Android 5.0 devices. I don't own an Android 5.0 device and I don't have time to maintain this app for now. Please find another one if this didn't work for you.
+This is the source code of Power Alarm Clock app in google play store:
+> https://play.google.com/store/apps/details?id=com.isjfk.android.racad
+
+# Important TODO list
+1. Fix alarm went off issue in Android 5.0 and above version.
+2. Convert into AndroidStudio project.
 
 # Power Alarm Clock main features:
 
