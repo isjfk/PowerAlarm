@@ -5,6 +5,7 @@ This is the source code of Power Alarm Clock app in google play store:
 > https://play.google.com/store/apps/details?id=com.isjfk.android.racad
 
 # Important TODO list
+Here is the most wanted bug fixs / new features. Feel free to push if you can help.
 1. Fix alarm went off issue in Android 5.0 and above version.
 2. Convert into AndroidStudio project.
 
@@ -45,5 +46,5 @@ With these powerful date repeat rules, it is possible to set alarms just once, t
 
 Feel free to send me mail if you have any ideas, suggestions or needs any help for this app.
 
-(C) InfiniteSpace Studio, 2013
+(C) InfiniteSpace Studio, 2013  
 Jimmy F. Klarke
