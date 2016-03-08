@@ -6,6 +6,7 @@ This is the source code of Power Alarm Clock app in google play store:
 
 # Important TODO list
 Here is the most wanted bug fixs / new features. Feel free to push if you can help.
+
 1. Fix alarm went off issue in Android 5.0 and above version.
 2. Convert into AndroidStudio project.
 
